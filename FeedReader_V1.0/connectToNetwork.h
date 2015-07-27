@@ -38,6 +38,7 @@ unsigned long waitUntil;
         }
         delay(100);
       }
+      if (echoCommand("AT+CIFSR", "0.0.0.0", 2000)) break;
       return 1;
     }
   }

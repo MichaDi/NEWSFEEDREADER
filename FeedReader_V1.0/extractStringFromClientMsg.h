@@ -24,6 +24,7 @@ unsigned long waitUntil;
         else ch2 -= '0';
         ch += ch2;
       }
+      else if (ch == '+') ch = ' ';
       else if (ch == ' ' || ch == '&') break;
       *string += ch;
     }
